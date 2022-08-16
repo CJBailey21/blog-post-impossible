@@ -1,0 +1,16 @@
+{{#if user}}
+<article class="post">
+
+    {{#each posts as |post| }}
+        {{> post-info post}}
+    {{/each}}
+
+</article>
+
+
+  {{else}}
+    <h3>Welcome, Please sign in or create an account</h3>
+    <a href="/login">Log In</a>
+    <span>or</span>
+    <a href="/register">Register</a>
+  {{/if}}

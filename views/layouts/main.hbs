@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+      <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper deep-purple accent-1">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <a class="link" href="/">Home</a>
+          <a class="link" href="/dashboard">Dashboard</a>
+          {{#if user}}
+          <a class="black-text right-align" href="/auth/logout">Log Out</a>
+          {{/if}}
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    {{{body}}}
+  </main>
+
+  <script src="js/front.js"></script>
+</body>
+
+</html>
